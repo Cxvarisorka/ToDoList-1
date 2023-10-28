@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.checked{
+    background-color: green;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    background-color: #0C356A;
+}
+button{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#check{
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toDoList{
+    color: white;
+    background-color: #0174BE;
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.add-task{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 40px;
+}
+.add-task input{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 78%;
+    height: 100%;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    border: none;
+    background-color: #0C356A;
+    color: white;
+}
+input:focus{
+    outline: none;
+}
+.add-task button{
+    font-size: 1.2rem;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    border: none;
+    background-color: #0C356A;
+    color: white;
+    cursor: pointer;
+}
+#items-list{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.item{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    height: 50px;
+    background-color: #0C356A;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.item > div{
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    height: 100%;
+}
+#check{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+.item-text{
+    font-size: 1rem;
+}
+.delete{
+    width: 30px;
+    height: 30px;
+    background-color: #e41749;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.crossed{
+    text-decoration: line-through rgb(230, 230, 230);
+    color: rgb(230, 230, 230);
+}
